@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chit-Chat - Realtime NodeJs and SocketIO chat app.</title>
+
+    <!-- To build connection between client and server -->
+    <script defer src="/socket.io/socket.io.js"></script>
+
+    <script defer src="client.js"></script>
+    <!-- With defer script runs in background and loads after loading of DOM so no need to include script after HTML code -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="./assets/chat.png" alt="Chit-Chat">
+        <h1>Welcome to Chit-Chat App</h1>
+    </nav>
+    <div class="container">
+       
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+    
+</body>
+</html>
