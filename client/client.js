@@ -50,4 +50,7 @@ form.addEventListener('submit', e => {
     socket.emit('send', message);
     
     messageInput.value = ''; // so that input box becomes empty again
-})
+   
+    messageContainer.scrollTo(0, messageContainer.scrollHeight); 
+    // automatically scrolls down in case of message overflow
+});
